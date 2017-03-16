@@ -14,8 +14,10 @@ Code usage example:
     	String password = System.getProperty("watson.analysis.password");
     	
     	NaturalLanguageUnderstanding nlu = new NaturalLanguageUnderstanding(username, password);
-    	List<String> features =  Arrays.asList(new String[] { "concepts", "categories", "emotion", "entities", 
-				  							"keywords", "relations", "semantic_roles", "sentiment" });
+    	List<String> features =  Arrays.asList(new String[] { 	
+		"concepts", "categories", "emotion", "entities", 
+	 	"keywords", "relations", "semantic_roles", "sentiment" });
+							     
     	Analysis result = nlu.analyze(features, "www.example.com", true).execute();
     	System.out.println(result.toString());
-      '''
+  	'''
