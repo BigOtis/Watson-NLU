@@ -22,3 +22,33 @@ List<String> features =  Arrays.asList(new String[] {
 Analysis result = nlu.analyze(features, "www.example.com", true).execute();
 System.out.println(result.toString());
 ```
+
+Keyword Result Example:
+```json
+"keywords": [
+    {
+      "text": "prior coordination",
+      "relevance": 0.991001
+    },
+    {
+      "text": "illustrative examples",
+      "relevance": 0.942393
+    },
+    {
+      "text": "permission",
+      "relevance": 0.825913
+    },
+    {
+      "text": "domain",
+      "relevance": 0.824806
+    },
+    {
+      "text": "documents",
+      "relevance": 0.731819
+    },
+    {
+      "text": "information",
+      "relevance": 0.723005
+    }
+  ],
+```
