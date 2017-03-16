@@ -9,7 +9,7 @@ https://www.ibm.com/watson/developercloud/natural-language-understanding/api/v1/
 The request to the API returns a class named "Analysis" which provides the JSON objects returned by the service. 
 
 Code usage example:
-      '''Java
+      	'''java
     	String username = System.getProperty("watson.analysis.username");
     	String password = System.getProperty("watson.analysis.password");
     	
