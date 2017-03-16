@@ -29,7 +29,7 @@ public class AnalysisTest
         try {
 			System.getProperties().load(new FileInputStream("watson.properties"));
 		} catch (IOException e) {
-			System.err.println("MISSING MONGO.PROPERTIES FILE. DB WILL NOT LOAD CORRECTLY.");
+			System.err.println("Missing Watson properties file. Passwords will not load.");
 		}
     }
 
