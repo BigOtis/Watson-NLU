@@ -10,7 +10,7 @@ The request to the API returns a class named "Analysis" which provides the JSON 
 
 Code usage example:
 
-'''
+```java
 String username = System.getProperty("watson.analysis.username");
 String password = System.getProperty("watson.analysis.password");
 
@@ -21,4 +21,4 @@ List<String> features =  Arrays.asList(new String[] {
 
 Analysis result = nlu.analyze(features, "www.example.com", true).execute();
 System.out.println(result.toString());
-'''
+```
