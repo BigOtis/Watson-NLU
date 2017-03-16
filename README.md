@@ -52,3 +52,13 @@ Keyword Result Example:
     }
   ],
 ```
+Sentiment Example:
+```json
+"sentiment": {
+    "document": {
+      "score": 0.0,
+      "label": "neutral"
+    }
+  }
+```
+
