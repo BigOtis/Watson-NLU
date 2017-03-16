@@ -7,7 +7,6 @@ import java.util.List;
 import com.google.gson.JsonObject;
 import com.ibm.watson.developer_cloud.http.RequestBuilder;
 import com.ibm.watson.developer_cloud.http.ServiceCall;
-import com.ibm.watson.developer_cloud.natural_language_classifier.v1.model.Classification;
 import com.ibm.watson.developer_cloud.service.WatsonService;
 import com.ibm.watson.developer_cloud.util.ResponseConverterUtils;
 import com.ibm.watson.developer_cloud.util.Validator;
@@ -17,6 +16,9 @@ import okhttp3.Request;
 
 /**
  * NaturalLangaugeUnderstanding
+ * 
+ * Java-SDK wrapper for the Watson NLU service.
+ * Uses the base classes from the Watson Developer cloud Java SDK
  * 
  * Phillip Lopez - pgl5711@rit.edu
  */
@@ -58,6 +60,7 @@ public class NaturalLanguageUnderstanding extends WatsonService {
    *
    * @param classifierId The classifier id
    * @param textOrURL The submitted phrase to analyze or URL
+   * @param isURL - true if input is URL, false if input is text to be analyzed
    * @return the classification of a phrase with a given classifier
    */
   public ServiceCall<Analysis> analyze(List<String> features, final String textOrURL, boolean isURL) {
